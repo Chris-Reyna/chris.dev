@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@showIndex');
+
+Route::get('/work', 'HomeController@showWork');
+
+Route::get('/contact', 'HomeController@showContact');
+
+Route::get('/blog', 'HomeController@showBlog');
